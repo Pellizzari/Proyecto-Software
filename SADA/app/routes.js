@@ -12,6 +12,7 @@ module.exports = function(app, passport, connection, transporter,dbconfig) {
     require('./index/home.js')(app, passport, connection, transporter,dbconfig,title,bcrypt);
     require('./index/email.js')(app, passport, connection, transporter,dbconfig,title,bcrypt);
     require('./index/login.js')(app, passport, connection, transporter,dbconfig,title,bcrypt);
+    require('./index/prueba.js')(app, passport, connection, transporter,dbconfig,title,bcrypt);
 
     //Menu page
     require('./menu/menu.js')(app, passport, connection, transporter,dbconfig,title,bcrypt,isLoggedIn_Encuesta);
